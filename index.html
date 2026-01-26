@@ -3,67 +3,96 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Edvin Kajén — Contact</title>
-  <meta name="description" content="Kontaktuppgifter och sociala länkar." />
-  <link rel="stylesheet" href="../assets/style.css" />
+  <title>Edvin Kajén — Portfolio</title>
+  <meta name="description" content="Landing page som länkar till mina GitHub-projekt." />
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
   <div class="page">
     <header class="wrap topbar">
-      <a class="brand" href="../">
+      <a class="brand" href="./">
         <b>EDVIN KAJÉN</b>
         <span>PORTFOLIO</span>
       </a>
 
       <nav class="menu">
-        <a href="../">Home</a>
-        <a href="./" class="active">Contact</a>
+        <a href="./" class="active">Home</a>
+        <a href="./contact/">Contact</a>
         <a href="https://github.com/Edvinkajen" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
     </header>
 
-    <main class="wrap grid contact">
+    <main class="wrap grid landing">
       <section>
-        <h1 class="huge">GET IN<br>TOUCH</h1>
+        <h1 class="huge">PROJECTS</h1>
+        <p class="subtle">
+          Ett urval av mina projekt inom embedded systems, PCB/elektronik, UI och FPGA.
+          Klicka för att gå direkt till respektive repo.
+        </p>
+
+        <div class="hr"></div>
+
+        <div class="repo-list">
+          <a class="repo" href="https://github.com/Edvinkajen/NextRound" target="_blank" rel="noreferrer">
+            <div class="left">
+              <div class="name">NextRound — Breathalyzer</div>
+              <div class="desc">Portable device: sensors, UI, firmware, enclosure + data logging.</div>
+            </div>
+            <div class="meta">Repo →</div>
+          </a>
+
+          <a class="repo" href="https://github.com/Edvinkajen/ESP32-Breathalyzer" target="_blank" rel="noreferrer">
+            <div class="left">
+              <div class="name">ESP32 Breathalyzer (Iteration 1)</div>
+              <div class="desc">Earlier prototype & course project baseline.</div>
+            </div>
+            <div class="meta">Repo →</div>
+          </a>
+
+          <a class="repo" href="https://github.com/Edvinkajen/<DIN_AWG_REPO>" target="_blank" rel="noreferrer">
+            <div class="left">
+              <div class="name">FPGA Function Generator / AWG</div>
+              <div class="desc">Spartan-6 + RP2350B, waveform pipeline, memory, DAC + analog front-end.</div>
+            </div>
+            <div class="meta">Repo →</div>
+          </a>
+
+          <a class="repo" href="https://github.com/Edvinkajen/<ANNAT_REPO>" target="_blank" rel="noreferrer">
+            <div class="left">
+              <div class="name">Misc tools / coursework</div>
+              <div class="desc">Scripts, analysis, reports and utilities.</div>
+            </div>
+            <div class="meta">Repo →</div>
+          </a>
+        </div>
       </section>
 
-      <section class="contact-cols">
-        <div>
-          <p class="block-title">MAIL</p>
-          <div class="block-value">
-            <a href="mailto:edvin.kajen@example.com">edvin.kajen@example.com</a>
-          </div>
+      <aside class="panel">
+        <div class="kicker">Quick links</div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <a class="badge" href="https://github.com/Edvinkajen?tab=repositories" target="_blank" rel="noreferrer">
+            <span class="dot"></span> All repos
+          </a>
+          <a class="badge" href="./contact/">
+            <span class="dot"></span> Contact
+          </a>
+          <a class="badge" href="https://www.linkedin.com/in/<DIN_LINKEDIN>/" target="_blank" rel="noreferrer">
+            <span class="dot"></span> LinkedIn
+          </a>
         </div>
 
-        <div>
-          <p class="block-title">WHATSAPP</p>
-          <div class="block-value">
-            <a href="https://wa.me/<LANDSKOD_OCH_NUMMER>" target="_blank" rel="noreferrer">
-              +46 7X XXX XX XX
-            </a>
-          </div>
-        </div>
-      </section>
+        <div class="hr"></div>
+
+        <p class="subtle" style="margin:0;">
+          Fokus: robusta embedded-system, mätlogik, hardware iterationer, dokumentation
+          och “shipping mindset”.
+        </p>
+      </aside>
     </main>
 
-    <div class="footer-left">
-      <div class="row">
-        <div>EDVIN</div>
-        <div>KAJÉN</div>
-      </div>
-      <div class="row" style="gap:10px;">
-        <div>PORTFOLIO</div>
-        <div>2026©</div>
-      </div>
-    </div>
-
-    <div class="corner-links">
-      <div><a href="https://www.linkedin.com/in/<DIN_LINKEDIN>/" target="_blank" rel="noreferrer">LINKEDIN</a></div>
-      <div><a href="https://github.com/Edvinkajen" target="_blank" rel="noreferrer">GITHUB</a></div>
-      <div><a href="https://instagram.com/<DIN_INSTAGRAM>" target="_blank" rel="noreferrer">INSTAGRAM</a></div>
-    </div>
-
-    <script src="../assets/main.js"></script>
+    <script src="./assets/main.js"></script>
   </div>
 </body>
 </html>
+
