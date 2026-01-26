@@ -33,7 +33,7 @@ small{ color: var(--faint); }
 }
 
 /* Soft “blobs” background (matches the reference vibe) */
-.page::before,
+.page::before{animation: breatheSlow 18s ease-in-out infinite;}
 .page::after{
   content:"";
   position:absolute;
@@ -47,6 +47,7 @@ small{ color: var(--faint); }
   filter: blur(28px) saturate(110%);
   transform: translateZ(0);
   opacity: .9;
+  animation: breatheSlower 26s ease-in-out infinite;
 }
 .page::after{
   z-index:-3;
@@ -281,3 +282,40 @@ small{ color: var(--faint); }
   width:8px; height:8px; border-radius:50%;
   background: rgba(244,244,244,.65);
 }
+
+@keyframes breatheSlow {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.85;
+    filter: blur(28px) saturate(110%);
+  }
+  50% {
+    transform: scale(1.06) translate(-2%, 1%);
+    opacity: 1;
+    filter: blur(34px) saturate(120%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.85;
+    filter: blur(28px) saturate(110%);
+  }
+}
+
+@keyframes breatheSlower {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.65;
+    filter: blur(60px) saturate(120%);
+  }
+  50% {
+    transform: scale(1.1) translate(2%, -1%);
+    opacity: 0.85;
+    filter: blur(72px) saturate(135%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.65;
+    filter: blur(60px) saturate(120%);
+  }
+}
+
